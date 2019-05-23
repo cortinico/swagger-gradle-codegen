@@ -1,7 +1,7 @@
 plugins {
-    id("com.android.library") version "3.5.0"
+    id("com.android.library") version "3.6.0-rc01"
     kotlin("android") version "1.3.50"
-    id("com.yelp.codegen.plugin") version "1.2.0"
+    id("com.yelp.codegen.plugin") version "1.3.0-SNAPSHOT"
 }
 
 android {
@@ -37,7 +37,7 @@ dependencies {
 }
 
 generateSwagger {
-    platform = "kotlin"
+    platform = "kotlin-coroutines"
     packageName = "com.yelp.codegen.samples"
     specName = "sample_specs"
     specVersion = "1.0.0"
